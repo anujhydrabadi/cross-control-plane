@@ -38,6 +38,7 @@ public class VCSCallbackController {
     controlPlaneClient.linkGithubAccount(code, installationId, callbackStateDTO);
     return new RedirectView(
         String.format(
-            "https://%s/capc/settings/organization-accounts", callbackStateDTO.controlPlaneUrl()));
+            "https://%s/capc/settings/overlay/organization-accounts",
+            callbackStateDTO.controlPlaneUrl()));
   }
 }
