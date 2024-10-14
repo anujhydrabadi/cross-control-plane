@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>cloud.facets</groupId>
 	<artifactId>cross-control-plane</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>cross-control-plane</name>
 	<description>Single instance that can communicate with all control planes</description>
 

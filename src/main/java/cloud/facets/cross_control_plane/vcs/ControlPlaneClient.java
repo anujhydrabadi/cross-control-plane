@@ -21,7 +21,11 @@ public class ControlPlaneClient {
     OneTimePayload<GithubAppInstallationPayload> payload =
         new OneTimePayload<>(
             callbackStateDTO.webhookId(),
-            new GithubAppInstallationPayload(code, installationId, callbackStateDTO.accountName()));
+            new GithubAppInstallationPayload(
+                code,
+                installationId,
+                callbackStateDTO.accountName(),
+                callbackStateDTO.enterpriseHostName()));
     HttpHeaders headers = new HttpHeaders();
     headers.setContentType(MediaType.APPLICATION_JSON);
     HttpEntity<OneTimePayload<GithubAppInstallationPayload>> entity =
